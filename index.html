@@ -5,43 +5,156 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/9ed3108268.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <title>Document</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   
-  
-  
-  <header class="header-container">
+  <header class="header-container bottom-divisor">
     <nav  class="nav-menu">
-
       <div class="search-container">
         <div class="icon-wrapper">
-          <i class="fa-solid fa-chevron-left icons" style="color: #fafafa;"></i>
-          <i class="fa-solid fa-chevron-right icons" style="color: #fafafa;"></i>
+          <a href="#"><i class="fa-solid fa-chevron-left icons icons-medium"></i></a>
+          <a href="#"><i class="fa-solid fa-chevron-right icons icons-medium icon-disabled"></i></a>
         </div>
-
-        <span  id="input-search-container">
-          <i class="fa-solid fa-magnifying-glass" style="color: #999999"></i>
-          <input type="text" class="search-input" style="color: #999999" placeholder="Search">
+        <span  class="input-search-container">
+          <a href="#"><i class="fa-solid fa-magnifying-glass" ></i></a>
+          <a href="#"><input type="text" class="search-input" placeholder="Search"></a>
         </span>
       </div>
 
       <div class="profile-container">
-        <i class="fa-solid fa-bell icons" style="color: #fafafa;"></i>
-        <i class="fa-solid fa-inbox icons" style="color: #fafafa;"></i>
-        <span class="user-icons-wrapper">
-          <img class="profile-picture" src="https://i1.sndcdn.com/avatars-000282536343-6h6ce2-t240x240.jpg" alt="">
-          <h3>Lucas Rocha</h3>
-        </span>
-        <i class="fa-solid fa-chevron-down icons" style="color: #fafafa;"></i>
+          <a href="#"><i class="fa-solid fa-bell icons" ></i></a>
+          <a href="#"><i class="fa-solid fa-inbox icons" ></i></a>
+            <span class="user-info-wrapper">
+              <a href="#"><img class="profile-picture" src="./img/user-profile-picture.jpg" alt=""></a>
+              <h2>Lucas Rocha</h2>
+            </span>
+          <a href="#"><i class="fa-solid fa-chevron-down icons"></i></a>
       </div>
     </nav>
   </header>
 
+  <section class="features-container">
+    <nav class="features-nav-menu bottom-divisor">
+      <div class="feature">
+        <span class="feature-title">
+          <h2>MAIN</h2>
+          <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
+        </span>
+        <div class="feature-items">
+          <span class="feature-item">
+            <a href="#"><i class="fa-regular fa-window-restore icons desktop-icons"></i></a>
+            <p>Browse</p>        
+          </span>
+          <span class="feature-item">
+            <a href="#"><i class="fa-solid fa-user-group icons desktop-icons" ></i></a>
+            <p>Activity</p>        
+          </span>
+          <span class="feature-item">
+            <a href="#"><i class="fa-solid fa-radio icons desktop-icons" ></i></a>
+            <p>Radio</p>        
+          </span>
+        </div>
+      </div>
 
+      <div class="feature">
+        <span class="feature-title">
+          <h2>YOUR MUSIC</h2>
+          <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
+        </span>
+        <div class="feature-items">
+        <span class="feature-item">
+          <a href="#"><i class="fa-solid fa-headphones icons desktop-icons" ></i></a>
+          <p>Songs</p>        
+        </span>
+        <span class="feature-item">
+          <a href="#"><i class="fa-solid fa-music icons desktop-icons" ></i></a>
+          <p>Albums</p>        
+        </span>
+        <span class="feature-item">
+          <a href="#"><i class="fa-solid fa-user icons desktop-icons" ></i></a>
+          <p>Artists</p>        
+        </span>
+        <span class="feature-item">
+          <a href="#"><i class="fa-solid fa-file icons desktop-icons" ></i></a>
+          <p>Local Files</p>        
+        </span>
+      </div> 
+      </div> 
+      
+      <div class="feature">
+        <span class="feature-title">
+          <h2>PLAYLIST</h2>
+          <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
+        </span>
+        <div class="feature-items">
+        <span class="feature-item">
+          <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons" ></i></a>
+          <p>Chill</p>        
+        </span>
+        <span class="feature-item">
+          <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons" ></i></a>
+          <p>Travelling</p>        
+        </span>
+        <span class="feature-item">
+          <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons" ></i></a>
+          <p>Party night</p>        
+        </span>
+      </div> 
+      </div> 
+    </nav>
 
+    <div class="playlists-container">
+      <span class="new-playlist-container bottom-divisor">
+        <a href=""><i class="fa-solid fa-plus icons icons-medium"></i></a>
+        <h2>New Playlist</h2>
+      </span>
+      <span class="playing bottom-divisor">
+        <span class="playing-song-container">
+          <img src="https://m.media-amazon.com/images/I/71FueAKQ22L._UF1000,1000_QL80_.jpg" class="playing-img" alt="">
+          <span class="playing-song-info">
+            <h2 class="playing-song-title">Nothing else matters</h2>
+            <h4 class="playing-sonng-artist">Metallica</h4>
+          </span>
+        </span>
+        <span class="playlist-added">
+        <a href=""><i class="fa-solid fa-check icons icons-medium"></i></a>
+        </span>
+      </span>
+    </div>
+  </section>
+
+  <main class="app-main-container"> 
+    <section class="artist-main-profile-container">
+      <div  class="artist-main-profile-picture">
+        <img src="./img/artist-profile-picture.jpg" alt="">
+      </div>
+      <div class="artist-main-profile-info">
+        <span class="artist-profile-title">
+          <h2></h2>  
+          <h1></h1>
+        </span>
+        <div class="button-wrapper"> 
+          <button class="button play-button">
+            <i class="fa-solid fa-play"></i>
+            Play
+          </button>
+          <button class="button">
+            Subscribe
+          </button>
+          <button class="button">
+            ...
+          </button>
+        </div>
+      </div>
+      <span class="artist-main-profile-listeners-info">
+        <h3></h3>
+        <h3></h3>
+      </span>
+    </section>
+  </main>
 </body>
 </html>

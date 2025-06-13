@@ -1,18 +1,77 @@
+:root{
+  --main-background-color: #181818;
+  --secundary-background-color: #282828;
+  --border-divisor-color: #171717;
+  --font-color: #999999;
+  --hover-font-color: #acacac;
+  --icon-color: #888787;
+  --icon-color-disabled: #777676;
+  --hover-icon-color: #acacac;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+  font-family: "Rubik", sans-serif;
+  color: var(--font-color);
+  font-size: 1.08rem;
+  font-weight: 400;
 }
 
-/* Seção do header */
-.header-container{
-  width: 100%;
-  padding: 12px;
+a {
+  text-decoration: none;
+}
 
-  color: white;
-  background-color: #282828; 
-  border-bottom: 1px solid#292929;
+body{
+  background-color: var(--main-background-color);
+}
+
+/* Icons */
+.icons{
+  color: var(--font-color);
+}
+
+.icons-medium{
+  font-size: 1.3rem;
+}
+.icons-small {
+  font-size: 0.7rem
+}
+
+.icon-disabled{
+  color: var(--icon-color-disabled);
+}
+
+.icons::hover{
+  color: var(--hover-icon-color)
+}
+
+.icons::hover a{
+  color: var(--hover-icon-color)
+}
+
+.icon-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+
+.desktop-icons{
+  display: none;
+}
+
+.bottom-divisor{
+  border-bottom: 1px solid var(--border-divisor-color);
+}
+
+/* Header */
+.header-container{
+  width: 100vw;
+  padding: 10px 0;
+  background-color: var(--secundary-background-color); 
 }
 
 .nav-menu{
@@ -24,70 +83,203 @@
   display: flex;  
   flex-direction: row;
   align-items: center;
-  
-  gap: 10px;
-  padding: 12px;
+  justify-content: space-around;
+  padding: 8px;
   margin-bottom: 10px;
+  gap: 28px ;
 }
 
-.icon-wrapper{
+.input-search-container{
   display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.icons{
-  font-size: .95em;
-}
-
-#input-search-container{
+  flex-wrap: nowrap;
   border-radius: 12px;
   padding: 4px;
-
+  color: var(--font-color);
   background-color: white;
 }
 
 .search-input{
-  width: 220px;
+  width: 60vw;
+  padding-right: 45px;
   border: none;
   outline: none;
 }
 
 .profile-container{
   display: flex;
-  
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 10px;
 }
 
-.user-icons-wrapper{
+.user-info-wrapper{
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-grow: 0.1;
+  gap: 6px;
+}
+
+.user-info{
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .profile-picture{
-  width: 42px;
-  border-radius: 50% ;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.features-container{
+  display: flex;
+  width: 100vw;
+  background-color: var(--secundary-background-color);
+  flex-direction: column;
+}
+
+.features-nav-menu{
+  width: 100vw;
+  padding: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.feature{
+  display: flex;
+  flex-direction: column;
+  width: 26%;
+  justify-content: center;
+  text-align: center;
+  gap: 6px
+}
+
+.feature-title{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.feature-title h2, a{
+  font-size: 75%;
+  flex-wrap: nowrap;
+  text-align: left;
+}
+
+#trigger:checked + .test {
+  display: none;
+}
+
+.feature-items{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 
+.feature-item{
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.playlist-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.new-playlist-container{
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 8px;
+  gap: 12px;
+  height: 8vh;
+}
+
+.playing{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playing-song-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.playing-song-info{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.playing-img{
+  width: 3.8em;
+  padding: 0;
+  top: 0;
+}
+
+.playlist-added{
+  padding-right: 14px;
+}
+
+.app-main-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-main-profile-container{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),  url(./img/artist-cover.jpg);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  top: 0;
+}
+
+.artist-main-profile-picture{
+  width: 200px;
+  height: 200px;
 
 
 
 
 
+}
+.artist-main-profile-picture img{
+  /* width: 180px;
+  height: 180px; */
+  border-radius: 50%;
+  max-width: 50%;
+  max-height: auto;
+  width: 50%;
+  height: 150px;
+        min-width: 150px;/*Note the px*/
+        min-height: auto;
 
+  
+}
 
+/* mid break column design */
+@media (min-width: 813px){
+  * { 
+    font-size: 1rem;
+  }
 
+  .icon-wrapper{
+    flex-wrap: nowrap;
+  }
 
-
-
-
-
-
-@media (min-width: 500px) {
   .header-container{
     padding: 8px;
   }
@@ -98,11 +290,79 @@
   }
   
   .profile-container{
-    width: 24vw;
+    justify-content: flex-end;
+    width: 45vw;
     right: 0;
+
   }
 
   .search-container{
-  margin-bottom: 0;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    width: 40vw;
+  }
+
+  .input-search-container{
+    width: 320px;
+  }
+
+  .search-input{
+    width: 200px;
+  }
+
 }
+
+/* desktop break design */
+@media (min-width: 961px){
+  
+  .desktop-icons{
+    display: block;
+  }
+
+  .icon-disabled{
+    display: none;
+  }
+
+  .header-container{
+    padding: 10px 20px;
+  }
+  
+  .features-container{
+    display: flex;
+    width: 19.8vw;
+    min-width: 120px;
+    max-width: 380px;
+    height: 100vh;
+    left: 0;
+  }
+
+  .features-nav-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  
+  .feature{
+    gap: 14px;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .feature-title{
+    justify-content: flex-start;
+  }
+
+  .feature-item{
+    width: 100%;
+    min-width: 80px;
+    gap: 12px;
+    display: flex;
+  }
+  
+  .new-playlist-container{
+    display: flex;
+
+  }
 }
