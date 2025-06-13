@@ -48,8 +48,8 @@ body {
 }
 
 .button-circle {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   border: 1px solid var(--font-color-light);
   background-color: transparent;
@@ -60,6 +60,7 @@ body {
 .button-play{
   background-color: var(--button-play-bg);
   color: var(--font-color-light);
+  border: none !important;
 }
 
 .button-play i{
@@ -330,6 +331,7 @@ body {
 
 .button-wrapper{
   display: flex;
+  align-items: center;
   gap: 10px;
   padding: 15px;
 }
