@@ -1,170 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/9ed3108268.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
   <title>Songs</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  
+
   <header class="header-container bottom-divisor">
-    <nav  class="nav-menu">
+    <nav class="nav-menu">
       <div class="search-container">
         <div class="icon-wrapper">
           <a href="#"><i class="fa-solid fa-chevron-left icons icons-medium"></i></a>
           <a href="#"><i class="fa-solid fa-chevron-right icons icons-medium icon-disabled"></i></a>
         </div>
-        <span  class="input-search-container">
-          <a href="#"><i class="fa-solid fa-magnifying-glass" ></i></a>
+        <span class="input-search-container">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
           <a href="#"><input type="text" class="search-input" placeholder="Search"></a>
         </span>
       </div>
 
       <div class="profile-container">
-          <a href="#"><i class="fa-solid fa-bell icons icons-medium" ></i></a>
-          <a href="#"><i class="fa-solid fa-inbox icons icons-medium" ></i></a>
-            <span class="user-info-wrapper">
-              <a href="#"><img class="profile-picture" src="./img/user-profile-picture.jpg" alt=""></a>
-              <h2>Lucas Rocha</h2>
-            </span>
-          <a href="#"><i class="fa-solid fa-chevron-down icons icons-medium"></i></a>
+        <a href="#"><i class="fa-solid fa-bell icons icons-medium"></i></a>
+        <a href="#"><i class="fa-solid fa-inbox icons icons-medium"></i></a>
+        <span class="user-info-wrapper">
+          <a href="#"><img class="profile-picture" src="./img/user-profile-picture.jpg" alt=""></a>
+          <h2>Lucas Rocha</h2>
+        </span>
+        <a href="#"><i class="fa-solid fa-chevron-down icons icons-medium"></i></a>
       </div>
     </nav>
   </header>
-
-  <section class="features-container">
-    <nav class="features-nav-menu bottom-divisor">
-      <div class="feature">
-        <span class="feature-title">
-          <h2>MAIN</h2>
-          <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
-        </span>
-        <!-- <div class="feature-items">
-          <span class="feature-item">
-            <a href="#"><i class="fa-regular fa-window-restore icons desktop-icons"></i></a>
-            <p>Browse</p>        
+  <main class="container">
+    <section class="features-container">
+      <nav class="features-nav-menu bottom-divisor">
+        <div class="feature">
+          <span class="feature-title">
+            <h2>MAIN</h2>
+            <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
           </span>
-          <span class="feature-item">
-            <a href="#"><i class="fa-solid fa-user-group icons desktop-icons" ></i></a>
-            <p>Activity</p>        
-          </span>
-          <span class="feature-item">
-            <a href="#"><i class="fa-solid fa-radio icons desktop-icons" ></i></a>
-            <p>Radio</p>        
-          </span>
-        </div> -->
-      </div>
-
-      <div class="feature">
-        <span class="feature-title">
-          <h2>YOUR MUSIC</h2>
-          <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
-        </span>
-        <!-- <div class="feature-items">
-        <span class="feature-item">
-          <a href="#"><i class="fa-solid fa-headphones icons desktop-icons" ></i></a>
-          <p>Songs</p>        
-        </span>
-        <span class="feature-item">
-          <a href="#"><i class="fa-solid fa-music icons desktop-icons" ></i></a>
-          <p>Albums</p>        
-        </span>
-        <span class="feature-item">
-          <a href="#"><i class="fa-solid fa-user icons desktop-icons" ></i></a>
-          <p>Artists</p>        
-        </span>
-        <span class="feature-item">
-          <a href="#"><i class="fa-solid fa-file icons desktop-icons" ></i></a>
-          <p>Local Files</p>        
-        </span>
-      </div>  -->
-      </div> 
-      
-      <div class="feature">
-        <span class="feature-title">
-          <h2>PLAYLIST</h2>
-          <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
-        </span>
-        <!-- <div class="feature-items">
-        <span class="feature-item">
-          <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons" ></i></a>
-          <p>Chill</p>        
-        </span>
-        <span class="feature-item">
-          <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons" ></i></a>
-          <p>Travelling</p>        
-        </span>
-        <span class="feature-item">
-          <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons" ></i></a>
-          <p>Party night</p>        
-        </span>
-      </div>  -->
-      </div> 
-    </nav>
-
-    <div class="playlists-container">
-      <span class="new-playlist-container bottom-divisor">
-        <a href=""><i class="fa-solid fa-plus icons icons-medium"></i></a>
-        <h2>New Playlist</h2>
-      </span>
-      <span class="playing bottom-divisor">
-        <span class="playing-song-container">
-          <img src="https://m.media-amazon.com/images/I/71FueAKQ22L._UF1000,1000_QL80_.jpg" class="playing-img" alt="">
-          <span class="playing-song-info">
-            <h2 class="playing-song-title">Nothing else matters</h2>
-            <h4 class="playing-sonng-artist">Metallica</h4>
-          </span>
-        </span>
-        <span class="playlist-added">
-        <a href=""><i class="fa-solid fa-check icons icons-medium"></i></a>
-        </span>
-      </span>
-    </div>
-  </section>
-
-  <main class="app-main-container"> 
-    <section class="artist-main-profile-container">
-      <div  class="artist-main-profile-picture">
-        <img src="./img/artist-profile-picture.jpg" alt="">
-      </div>
-      <div class="artist-main-profile-info">
-        <span class="artist-profile-title">
-          <h3>Artist</h3>  
-          <h1>Metallica</h1>
-        </span>
-        <div class="button-wrapper"> 
-          <button class="button button-play">
-            <i class="fa-solid fa-play"></i>
-            PLAY
-          </button>
-          <button class="button">
-            FOLLOW
-          </button>
-          <button class="button-circle">
-            <i class="fa-solid fa-ellipsis"></i>
-          </button>
+          <div class="feature-items">
+            <span class="feature-item">
+              <a href="#"><i class="fa-regular fa-window-restore icons desktop-icons"></i></a>
+              <p>Browse</p>
+            </span>
+            <span class="feature-item">
+              <a href="#"><i class="fa-solid fa-user-group icons desktop-icons"></i></a>
+              <p>Activity</p>
+            </span>
+            <span class="feature-item">
+              <a href="#"><i class="fa-solid fa-radio icons desktop-icons"></i></a>
+              <p>Radio</p>
+            </span>
+          </div>
         </div>
-      </div>
-      <span class="artist-main-profile-listeners-info">
-        <h3>60,589,222</h3>
-        <h3>MONTHLY LISTENERS</h3>
-      </span>
-      <nav class="artist-nav-tabs">
-        <div class="nav-tabs">
-          <h2 class="bottom-activated-border">OVERVIEW</h2>
-          <h2>BIOGRAPHY</h2>
-          <h2>ALBUMS</h2>
+
+        <div class="feature">
+          <span class="feature-title">
+            <h2>YOUR MUSIC</h2>
+            <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
+          </span>
+          <div class="feature-items">
+            <span class="feature-item">
+              <a href="#"><i class="fa-solid fa-headphones icons desktop-icons"></i></a>
+              <p>Songs</p>
+            </span>
+            <span class="feature-item">
+              <a href="#"><i class="fa-solid fa-music icons desktop-icons"></i></a>
+              <p>Albums</p>
+            </span>
+            <span class="feature-item">
+              <a href="#"><i class="fa-solid fa-user icons desktop-icons"></i></a>
+              <p>Artists</p>
+            </span>
+            <span class="feature-item">
+              <a href="#"><i class="fa-solid fa-file icons desktop-icons"></i></a>
+              <p>Local Files</p>
+            </span>
+          </div>
         </div>
-        <span></span>
+
+        <div class="feature">
+          <span class="feature-title">
+            <h2>PLAYLIST</h2>
+            <a for="trigger"><i class="fa-solid fa-chevron-down icons-small icon-disabled"></i></a>
+          </span>
+          <div class="feature-items">
+            <span class="feature-item">
+              <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons"></i></a>
+              <p>Chill</p>
+            </span>
+            <span class="feature-item">
+              <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons"></i></a>
+              <p>Travelling</p>
+            </span>
+            <span class="feature-item">
+              <a href="#"><i class="fa-solid fa-circle-play icons desktop-icons"></i></a>
+              <p>Party night</p>
+            </span>
+          </div>
+        </div>
       </nav>
+
+      <div class="playlists-container">
+        <span class="new-playlist-container bottom-divisor">
+          <a href=""><i class="fa-solid fa-plus icons icons-medium"></i></a>
+          <h2>New Playlist</h2>
+        </span>
+        <span class="playing bottom-divisor">
+          <span class="playing-song-container">
+            <img src="https://m.media-amazon.com/images/I/71FueAKQ22L._UF1000,1000_QL80_.jpg" class="playing-img"
+              alt="">
+            <span class="playing-song-info">
+              <h2 class="playing-song-title">Nothing else matters</h2>
+              <h4 class="playing-sonng-artist">Metallica</h4>
+            </span>
+          </span>
+          <span class="playlist-added">
+            <a href=""><i class="fa-solid fa-check icons icons-medium"></i></a>
+          </span>
+        </span>
+      </div>
+    </section>
+
+    <section class="app-artist-container">
+
+      <div class="artist-profile-container">
+
+
+        <div class="artist-info">
+          <div class="artist-info-wrapper">
+            <div class="artist-profile-picture">
+              <img src="./img/artist-profile-picture.jpg" alt="">
+            </div>
+            <div class="artist-profile-data">
+              <span class="artist-profile-title">
+                <h3>Artist</h3>
+                <h1>Metallica</h1>
+              </span>
+              <div class="button-wrapper">
+                <button class="button button-play">
+                  <i class="fa-solid fa-play"></i>
+                  PLAY
+                </button>
+                <button class="button">
+                  FOLLOW
+                </button>
+                <button class="button-circle">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <span class="artist-profile-listeners-info">
+            <h3>60,589,222</h3>
+            <h3>MONTHLY LISTENERS</h3>
+          </span>
+        </div>
+
+
+        <nav class="artist-nav-tabs">
+          <div class="nav-tabs">
+            <h2 class="bottom-activated-border">OVERVIEW</h2>
+            <h2>BIOGRAPHY</h2>
+            <h2>ALBUMS</h2>
+          </div>
+        </nav>
+      </div>
+
 
     </section>
   </main>
 </body>
+
 </html>

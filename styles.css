@@ -9,7 +9,7 @@
   --icon-color: #888787;
   --icon-color-disabled: #777676;
   --hover-icon-color: #acacac;
-  --button-play-bg: #51c557;
+  --button-play-bg: #5714af;
   --light-icon-color: #d3d3d3;
 }
 
@@ -114,6 +114,14 @@ body {
 .bottom-activated-border{
   border-bottom: 2px solid var(--button-play-bg);
 }
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+
 /* Header */
 .header-container{
   width: 100vw;
@@ -280,12 +288,13 @@ body {
   padding-right: 14px;
 }
 
-.app-main-container{
+.app-artist-container{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-.artist-main-profile-container{
+.artist-profile-container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,22 +305,27 @@ body {
   background-size:cover;
 }
 
-.artist-main-profile-picture{
+.artist-info-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.artist-profile-picture{
   display: flex;
   justify-content: center;
 }
 
-.artist-main-profile-picture img{
+.artist-profile-picture img{
   border-radius: 50%;
-  max-width: 50%;
-  max-height: auto;
-  width: 50%;
-  height: 150px;
-  min-width: 150px;
-  min-height: auto;  
+  /* max-width: 50%; */
+  /* max-height: auto; */
+  width: 180px;
+  height: 180px;
+  /* min-width: 150px; */
+  /* min-height: 150px;   */
 }
 
-.artist-main-profile-info{
+.artist-profile-data{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -343,7 +357,7 @@ body {
   margin: 0 10px 0 0;
 }
 
-.artist-main-profile-listeners-info{
+.artist-profile-listeners-info{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -367,6 +381,37 @@ body {
 .nav-tabs h2{
   color: var(--font-color-light);
   padding-bottom: 8px;
+}
+
+@media (min-width: 620px){
+  .artist-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .artist-info-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 15px;
+  }
+  
+  .artist-profile-data{
+    align-items: flex-start;
+  }
+    
+  .artist-profile-title{
+    align-items: flex-start;
+  }
+
+  .artist-profile-listeners-info{
+    align-items: flex-start;
+  }
+
 }
 
 
@@ -412,7 +457,9 @@ body {
 
 /* desktop break design */
 @media (min-width: 961px){
-  
+  .container{
+    flex-direction: row;
+  }
   .desktop-icons{
     display: block;
   }
@@ -436,6 +483,7 @@ body {
 
   .features-nav-menu{
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -446,6 +494,7 @@ body {
     gap: 14px;
     margin-bottom: 12px;
     text-align: left;
+    width: auto;
   }
 
   .feature-title{
