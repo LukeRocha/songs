@@ -301,6 +301,7 @@ ul{
   flex-direction: column;
   flex-wrap: wrap;
   padding-left: 15px;
+  gap: 10px;
 }
 
 .playlist-added{
@@ -561,6 +562,15 @@ text-align: left;
   align-items: center;
 }
 
+.playing-album-table{
+  width: 100%;
+}
+
+
+.feature-items{
+  display: none;
+}
+
 @media (min-width: 620px){
   .artist-info{
     width: 100%;
@@ -728,6 +738,12 @@ text-align: left;
     flex-direction: column;
     width: auto;
   }
+
+
+
+    .feature-items{
+  display: flex;
+}
 }
 
 @media(min-width: 1020px){
@@ -784,5 +800,13 @@ text-align: left;
     width: 38px;
     height: 38px;
   }
+
+  .artist-albums-container{
+    width: 100vw;
+  }
+
+
+
+
 
 }
