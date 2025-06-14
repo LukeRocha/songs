@@ -723,12 +723,13 @@ text-align: left;
   }
 
  .related-artists-container{
-    /* display: flex; */
-    width: 20vw;
+    display: flex;
+    width: 18vw;
     align-items: flex-start;
     flex-wrap: nowrap;
-    /* flex-direction: column; */
+    padding-left: 16px;
   }
+
   .content-block-container{
     width: 100%
   }
@@ -745,7 +746,7 @@ text-align: left;
   }
 
   .related-artist-title{
-    width: 10vw;
+    width: 100%;
   }
 
   .related-artist-img {
