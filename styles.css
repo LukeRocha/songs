@@ -407,7 +407,6 @@ ul{
 
 .popular-content-container{
   width: auto;
-  max-width: 950px;
 }
 
 .content-thumb-img {
@@ -600,5 +599,20 @@ flex-grow: 1;
   
   .new-playlist-container{
     display: flex;
+  }
+
+
+
+  .content-block-container{
+    width: 100%;
+    min-width: 550px;
+    max-width: 80vw;
+    display: flex;
+  }
+}
+
+@media(min-width: 1020px){
+  .popular-content-container{
+    max-width: 50vw ;
   }
 }
