@@ -86,6 +86,9 @@ ul{
 .icons{
   color: var(--font-color);
 }
+.icons-big{
+  font-size: 1.8rem;
+}
 
 .icons-medium{
   font-size: 1.3rem;
@@ -475,6 +478,26 @@ flex-grow: 1;
 
 
 
+
+
+
+
+
+.player-container{
+  display: flex;
+  background-color: var(--secundary-background-color);
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.player-controller{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (min-width: 620px){
   .artist-info{
     width: 100%;
@@ -611,7 +634,7 @@ flex-grow: 1;
   }
 }
 
-@media(min-width: 1020px){
+@media(min-width: 1400px){
   .popular-content-container{
     max-width: 50vw ;
   }
