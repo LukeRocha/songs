@@ -40,6 +40,8 @@ ul{
 .container{
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .button{
@@ -202,7 +204,7 @@ ul{
 
 .features-container{
   display: flex;
-  width: 100vw;
+  /* width: 100vw; */
   background-color: var(--secundary-background-color);
   flex-direction: column;
 }
@@ -323,12 +325,8 @@ ul{
 
 .artist-profile-picture img{
   border-radius: 50%;
-  /* max-width: 50%; */
-  /* max-height: auto; */
   width: 180px;
   height: 180px;
-  /* min-width: 150px; */
-  /* min-height: 150px;   */
 }
 
 .artist-profile-data{
@@ -392,7 +390,7 @@ ul{
 .artist-content-container{
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 15px;
 }
 
 .content-block-container{
@@ -408,6 +406,7 @@ ul{
 }
 
 .popular-content-container{
+  width: auto;
   max-width: 950px;
 }
 
@@ -434,9 +433,7 @@ ul{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 4px; */
   color: var(--font-color-light);
-  
 }
 /* max-width: 980px; */
 
@@ -452,9 +449,8 @@ ul{
   padding: 0 8px 8px 4px;
 }
 
-#songs-track-id{
-  width: 4vw;
-  padding: 0 4px 0 0;
+#songs-track-position{
+  padding: 0 8px 0 4px;
 }
 
 #songs-track-icon{
@@ -464,15 +460,14 @@ ul{
 }
 
 #songs-track-title{
-  /* width: 50vw; */
-  width: 300px;
+width: 300px;
 text-align: left;
 }
 
 #songs-track-views{
-  width: 40vw;
+  width: 60vw;
   display: flex;
-
+flex-grow: 1;
   justify-content: flex-end;
   flex-wrap: wrap;
   color: var(--font-color-light);
@@ -534,7 +529,6 @@ text-align: left;
     justify-content: flex-end;
     width: 45vw;
     right: 0;
-
   }
 
   .search-container{
@@ -555,8 +549,10 @@ text-align: left;
 /* desktop break design */
 @media (min-width: 960px){
   .container{
+    width: auto;
     flex-direction: row;
   }
+
   .desktop-icons{
     display: block;
   }
@@ -571,16 +567,14 @@ text-align: left;
   
   .features-container{
     display: flex;
-    width: 19.8vw;
-    min-width: 120px;
-    max-width: 380px;
+    min-width: 180px;
+    max-width: 320px;
     height: 100vh;
     left: 0;
   }
 
   .features-nav-menu{
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
@@ -591,7 +585,6 @@ text-align: left;
     gap: 14px;
     margin-bottom: 12px;
     text-align: left;
-    width: auto;
   }
 
   .feature-title{
@@ -607,6 +600,5 @@ text-align: left;
   
   .new-playlist-container{
     display: flex;
-
   }
 }
