@@ -1,7 +1,7 @@
 :root{
   --main-background-color: #181818;
   --main-background-color-transparent: #181818b6;
-  --secundary-background-color: #282828;
+  --secondary-background-color: #282828;
   --border-divisor-color: #171717;
   --border-divisor-color-light: #999999;
   --font-color: #999999;
@@ -151,7 +151,7 @@ ul{
 .header-container{
   width: 100vw;
   padding: 10px 0;
-  background-color: var(--secundary-background-color); 
+  background-color: var(--secondary-background-color); 
 }
 
 .nav-menu{
@@ -216,7 +216,7 @@ ul{
 .features-container{
   display: flex;
   /* width: 100vw; */
-  background-color: var(--secundary-background-color);
+  background-color: var(--secondary-background-color);
   flex-direction: column;
 }
 
@@ -431,7 +431,7 @@ ul{
   justify-content: space-between;
   padding: 11px;
   gap: 14px;
-  background-color: var(--secundary-background-color);
+  background-color: var(--secondary-background-color);
 }
 
 .content-info h2, h4{
@@ -505,6 +505,9 @@ text-align: left;
   text-align: center;
 }
 
+.related-artist-item h2{
+  color: var(--font-color-light);
+}
 .related-artist-img {
   width: 60px;
   height: 60px;
@@ -512,15 +515,43 @@ text-align: left;
   object-fit: cover;
 }
 
+.artist-albums-container{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
+}
+
+.albums-menu{
+  display: flex;
+  overflow: auto;
+}
+.artist-album-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  gap: 8px;
+  text-align: center;
+  font-size: .9rem;
+}
+
+.album-cover-img{
+  width: 120px;
+}
+
+.artist-album-item h2{
+  width: 100%;
+}
+
 
 .player-container{
   display: flex;
-  background-color: var(--secundary-background-color);
+  background-color: var(--secondary-background-color);
   justify-content: center;
   flex-direction: column;
   padding: 15px;
   width: 100%;
-  /* height: auto; */
 }
 
 .player-controller{
@@ -570,7 +601,7 @@ text-align: left;
     display: flex;
     flex-direction: row;
     gap: 12px;
-    background-color: var(--secundary-background-color);
+    background-color: var(--secondary-background-color);
     width: 48%;
     padding: 12px;
   }
