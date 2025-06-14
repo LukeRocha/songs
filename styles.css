@@ -429,7 +429,7 @@ ul{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 15px;
+  padding: 11px;
   gap: 14px;
   background-color: var(--secundary-background-color);
 }
@@ -437,7 +437,6 @@ ul{
 .content-info h2, h4{
   color: var(--font-color-light);
 }
-
 
 .content-track-row{
   display: flex;
@@ -477,7 +476,7 @@ text-align: left;
 #songs-track-views{
   width: 60vw;
   display: flex;
-flex-grow: 1;
+  flex-grow: 1;
   justify-content: flex-end;
   flex-wrap: wrap;
   color: var(--font-color-light);
@@ -486,9 +485,32 @@ flex-grow: 1;
 
 
 
+.related-artists-container{
+  width: 100vw;
+  height: auto;
+}
+
+.related-artists-block-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 14px;
+  padding: 8px 0;
+}
 
 
+.related-artist-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 
+.related-artist-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
 
 .player-container{
@@ -537,6 +559,21 @@ flex-grow: 1;
     align-items: flex-end;
   }
 
+  .related-artists-block-items{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .related-artist-item{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    background-color: var(--secundary-background-color);
+    width: 48%;
+    padding: 12px;
+  }
 }
 
 @media (min-width: 813px){
@@ -602,7 +639,7 @@ flex-grow: 1;
     min-width: 180px;
     max-width: 320px;
     left: 0;
-    flex: 0 0 320px;  
+    flex: 0 0 280px;  
     overflow: hidden;
   }
 
@@ -655,11 +692,65 @@ flex-grow: 1;
   }
 
 
-  
+   .related-artists-container{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
 }
 
-@media(min-width: 1400px){
+@media(min-width: 1020px){
+  .features-container{
+    flex-basis: 18vw;  
+    max-width: 40vw;
+  }
+  
+  .features-nav-menu{
+    width: 100%;
+  }
+  
+  .artist-content-container{
+    flex-direction: row;
+  }
+
   .popular-content-container{
     max-width: 50vw ;
   }
+  
+  .release-content-info{
+    height: auto;
+    padding: 10px;
+  }
+
+ .related-artists-container{
+    /* display: flex; */
+    width: 20vw;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    /* flex-direction: column; */
+  }
+  .content-block-container{
+    width: 100%
+  }
+
+  .related-artists-block-items{
+    width: 30%;
+    flex-direction: column;
+  }
+
+  .related-artist-item{
+    width: 20vw;
+    height: auto;
+    padding: 4px 8px;
+  }
+
+  .related-artist-title{
+    width: 10vw;
+  }
+
+  .related-artist-img {
+    width: 38px;
+    height: 38px;
+  }
+
 }
