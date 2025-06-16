@@ -543,23 +543,6 @@ text-align: left;
   width: 100%;
 }
 
-
-.player-container{
-  display: flex;
-  background-color: var(--secondary-background-color);
-  justify-content: center;
-  flex-direction: column;
-  padding: 15px;
-  width: 100%;
-}
-
-.player-controller{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-}
-
 .playing-album-table{
   width: 100%;
 }
@@ -567,8 +550,9 @@ text-align: left;
 .playing-album-title{
   text-align: start;
 }
+
 .playing-album-container{
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -588,6 +572,7 @@ text-align: left;
  justify-content: space-between;
  gap: 20px;
 }
+
 .playing-album-artist-data h2{
   font-size: larger;
 }
@@ -598,7 +583,7 @@ text-align: left;
 
 .album-buttons-info-wrapper{
   display: flex;
-  /* width: 200px; */
+  width: 200px;
   gap: 20px;
 }
 
@@ -615,14 +600,111 @@ text-align: left;
 
 .playing-album-table th,
 .playing-album-table td {
+  color: var(--font-color-light);
   padding: 12px 16px;
-  text-align: left; 
-  border-bottom: 1px solid #ccc;
+  text-align: left;
 }
 
 .playing-album-table th {
   font-weight: bold;
 }
+
+.playing-album-song-name-container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: none;
+}
+
+.label-explicit-content{
+  display: none;
+  border: solid 1px var(--font-color);
+  padding: 2px;
+  font-size: 0.8rem;
+}
+
+.player-container{
+  display: flex;
+  background-color: var(--secondary-background-color);
+  flex-direction: column;
+  padding: 16px;
+  gap: 22px;
+}
+
+.player-controller-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.player--buttons-controller{
+  display: flex;
+  width: 100%;
+  padding: 0 12px;
+  justify-content: space-around;
+}
+
+.player-progress-bar-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .7em;
+  gap: 2px;
+}
+
+.player-progress-bar{
+  accent-color: var(--button-play-bg);
+  outline: none;
+  border-radius: 0;
+  width: 80%;
+}
+
+.player-content-container{
+  display: flex;
+}
+
+.player-content-controller{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .7rem;
+  width: 100%;
+}
+
+.devices-controller-wrapper{
+  display: flex;
+  gap: 4px;
+}
+
+.player-volume-wrapper{
+  display: flex;
+  /* width: 18%; */
+  justify-content: flex-start;
+}
+
+.player-volume-bar{
+  accent-color: grey;
+  width: 100px;
+  height: 12px;
+}
+
+
+@media (min-width: 481px){
+  .player-controller-wrapper{
+    flex-direction: row;
+  }
+
+  .player--buttons-controller{
+    width: 30%;
+    align-items: center;
+  }
+
+  .player-progress-bar-container{
+    width: 60%;
+    align-items: center;
+    font-size: .8rem;
+  }
+}
+
 @media (min-width: 620px){
   .artist-info{
     width: 100%;
@@ -706,6 +788,32 @@ text-align: left;
   .search-input{
     width: 200px;
   }
+
+  .player-container{
+    flex-direction: row ;
+    height: 80px;
+    justify-content: space-between;
+    padding: 12px 20px;
+  }
+
+  .player-content-controller{
+    width: 50vw;
+  } 
+
+  .player-volume-wrapper{
+    width: 150px;
+  }
+  .player-volume-bar{
+    width: 100px;
+  }
+
+  .player-progress-bar{
+    width: 30vw;
+  }
+
+
+
+
 }
 
 /* desktop break design */
@@ -782,18 +890,15 @@ text-align: left;
     overflow: hidden;
   }
 
-
-   .related-artists-container{
+  .related-artists-container{
     display: flex;
     flex-direction: column;
     width: auto;
   }
-
-
-
-    .feature-items{
-  display: flex;
-}
+  
+  .feature-items{
+    display: flex;
+  }
 }
 
 @media(min-width: 1020px){
@@ -860,9 +965,32 @@ text-align: left;
 
   .related-artists-wrapper{
     max-width: 250px;
-
   }
 
+  .playing-album-container{
+    padding: 20px;
+  }
+  .playing-album-table-container {
+    justify-content: flex-start;
+  }
 
+  .playing-album-table {
+    max-width: 70vw;
+  }
 
+  .label-explicit-content{
+    display: flex;  
+  }
+
+  .player-progress-bar-container{
+    width: 55vw;
+    justify-content: space-between;
+  }
+
+  .player-progress-bar{
+    width: 50vw;
+  }
+  .player-content-controller{
+    width: 30vw;
+  }
 }
