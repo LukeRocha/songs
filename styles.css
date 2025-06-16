@@ -624,7 +624,7 @@ text-align: left;
   flex-direction: column;
   padding: 16px;
   gap: 22px;
-  position: fixed;
+  position: sticky;
 }
 
 .player-controller-wrapper{
