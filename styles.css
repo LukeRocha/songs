@@ -763,6 +763,7 @@ text-align: left;
   }
 }
 
+
 @media (min-width: 620px){
   .artist-info{
     width: 100%;
@@ -1103,5 +1104,13 @@ text-align: left;
   
   .player-volume-wrapper{
     max-width: 200px;
+  }
+}
+
+
+@media screen and (orientation: landscape) {
+  header,
+  footer {
+    position: static;
   }
 }
