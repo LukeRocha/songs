@@ -641,7 +641,7 @@ text-align: left;
   gap: 22px;
   bottom: 0;
   width: 100%;
-  /* position: fixed; */
+  position: fixed;
 }
 
 .player-controller-wrapper{
@@ -925,6 +925,9 @@ text-align: left;
     overflow: visible    !important;  
   }
 
+.player-container{
+  position: sticky;
+}
 }
 
 @media(min-width: 1020px){
