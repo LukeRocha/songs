@@ -51,6 +51,7 @@ ul{
   overflow-x: hidden;
   height: auto;
   padding-bottom: 182px; 
+  box-sizing: border-box;
 }
 
 .button{
@@ -627,7 +628,8 @@ text-align: left;
   flex-shrink: 0;
   gap: 22px;
   bottom: 0;
-  position: sticky;
+  width: 100%;
+  position: fixed;
 }
 
 .player-controller-wrapper{
