@@ -251,10 +251,6 @@ ul{
   text-align: left;
 }
 
-#trigger:checked + .test {
-  display: none;
-}
-
 .feature-items{
   display: none;
   flex-direction: column;
@@ -636,11 +632,12 @@ text-align: left;
   gap: 12px;
 }
 
-.player--buttons-controller{
+.player-buttons-controller{
   display: flex;
   width: 100%;
   padding: 0 12px;
   justify-content: space-around;
+  align-items: center;
 }
 
 .player-progress-bar-container{
@@ -693,8 +690,8 @@ text-align: left;
     flex-direction: row;
   }
 
-  .player--buttons-controller{
-    width: 30%;
+  .player-buttons-controller{
+    width: 40%;
     align-items: center;
   }
 
@@ -796,6 +793,8 @@ text-align: left;
     padding: 12px 20px;
   }
 
+  .player-buttons-controller{}
+
   .player-content-controller{
     width: 50vw;
   } 
@@ -803,6 +802,7 @@ text-align: left;
   .player-volume-wrapper{
     width: 150px;
   }
+
   .player-volume-bar{
     width: 100px;
   }
@@ -810,10 +810,6 @@ text-align: left;
   .player-progress-bar{
     width: 30vw;
   }
-
-
-
-
 }
 
 /* desktop break design */
@@ -932,7 +928,7 @@ text-align: left;
     width: 18vw;
     align-items: flex-start;
     flex-wrap: nowrap;
-    padding-left: 16px;
+    padding-left: 60px;
   }
 
   .content-block-container{
@@ -970,6 +966,7 @@ text-align: left;
   .playing-album-container{
     padding: 20px;
   }
+
   .playing-album-table-container {
     justify-content: flex-start;
   }
@@ -982,15 +979,47 @@ text-align: left;
     display: flex;  
   }
 
-  .player-progress-bar-container{
-    width: 55vw;
-    justify-content: space-between;
+  .player-controller-wrapper{
+    width: 60vw;
   }
 
-  .player-progress-bar{
-    width: 50vw;
+  .player-buttons-controller{
+    width: 150px;
+    align-items: center;
   }
+
+  .player-buttons-controller{
+     flex: 0 0 auto;
+    max-width: 200px;
+    width: 35%;
+    gap: 0;
+  }
+
+  .player-progress-bar-container{
+    width: 360px;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;    
+  min-width: 0;     
+  gap: 8px;  
+  justify-content: flex-start; 
+  }
+
+ .player-progress-bar {
+  flex: 1 1 auto;    
+  width: 100%;      
+  min-width: 0;
+}
+
+  .player-content-container{
+    width: 35vw;
+  }
+  
   .player-content-controller{
-    width: 30vw;
+    width: 100%;
+  }
+  
+  .player-volume-wrapper{
+    max-width: 200px;
   }
 }
