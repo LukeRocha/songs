@@ -1110,7 +1110,19 @@ text-align: left;
 
 @media screen and (orientation: landscape) {
   header,
-  footer {
-    position: static;
+  footer,
+  .header-container,
+  .nav-menu {
+    position: static
+    ;
+  }
+}
+@media (min-height: 360px){
+    header,
+  footer,
+  .header-container,
+  .nav-menu {
+    position: static
+    ;
   }
 }
