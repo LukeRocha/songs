@@ -624,6 +624,7 @@ text-align: left;
   flex-direction: column;
   padding: 16px;
   gap: 22px;
+  bottom: 0;
   position: sticky;
 }
 
