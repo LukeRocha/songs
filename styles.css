@@ -624,6 +624,7 @@ text-align: left;
   flex-direction: column;
   padding: 16px;
   gap: 22px;
+  position: fixed;
 }
 
 .player-controller-wrapper{
@@ -674,7 +675,6 @@ text-align: left;
 
 .player-volume-wrapper{
   display: flex;
-  /* width: 18%; */
   justify-content: flex-start;
 }
 
