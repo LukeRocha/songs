@@ -6,10 +6,11 @@
   --border-divisor-color-light: #999999;
   --font-color: #999999;
   --font-color-light: #ffffff;
+  --font-color-light-hover: #ffffff;
   --hover-font-color: #acacac;
   --icon-color: #888787;
   --icon-color-disabled: #777676;
-  --hover-icon-color: #acacac;
+  --hover-icon-color: #cdcccc;
   --button-play-bg: #5714af;
   --light-icon-color: #d3d3d3;
 }
@@ -34,6 +35,8 @@ body {
   background-color: var(--main-background-color);
   font-family: "Rubik", sans-serif;
   font-size: 1.08rem;
+    animation-timing-function: linear;
+
 }
 
 a {
@@ -50,8 +53,6 @@ ul{
   width: 100vw;
   overflow-x: hidden;
   height: auto;
-  padding-bottom: 182px; 
-  box-sizing: border-box;
 }
 
 .button{
@@ -112,11 +113,11 @@ ul{
   color: var(--icon-color-disabled);
 }
 
-.icons::hover{
+.icons:hover{
   color: var(--hover-icon-color)
 }
 
-.icons::hover a{
+.icons:hover a{
   color: var(--hover-icon-color)
 }
 
@@ -217,7 +218,6 @@ ul{
 
 .features-container{
   display: flex;
-  /* width: 100vw; */
   background-color: var(--secondary-background-color);
   flex-direction: column;
 }
@@ -257,6 +257,18 @@ ul{
   display: none;
   flex-direction: column;
   gap: 18px;
+  transition: max-height 0.5s ease-in-out;
+   overflow: hidden;
+
+}
+
+.feature input[type="checkbox"]:checked + .feature-title + .feature-items {
+  display: flex;
+}
+
+.feature input[type="checkbox"]:checked + .feature-title i {
+  transform: rotate(180deg);
+  transition: transform .2s ease;
 }
 
 
@@ -443,7 +455,6 @@ ul{
   justify-content: space-between;
   color: var(--font-color-light);
 }
-/* max-width: 980px; */
 
 .content-track-row h2, i{
   color: var(--font-color-light);
@@ -523,6 +534,7 @@ text-align: left;
   display: flex;
   overflow: auto;
 }
+
 .artist-album-item {
   display: flex;
   align-items: center;
@@ -629,7 +641,7 @@ text-align: left;
   gap: 22px;
   bottom: 0;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .player-controller-wrapper{
@@ -798,8 +810,6 @@ text-align: left;
     padding: 12px 20px;
   }
 
-  .player-buttons-controller{}
-
   .player-content-controller{
     width: 50vw;
   } 
@@ -831,6 +841,16 @@ text-align: left;
 
   .icon-disabled{
     display: none;
+  }
+
+  .hover-border:hover  {
+    border-right: 4px solid var(--button-play-bg);
+    color: var(--font-color-light-hover);
+  }
+
+  .hover-border:hover .icons,
+  .hover-border:hover p {
+    color: var(--font-color-light-hover);
   }
 
   .header-container{
@@ -897,10 +917,14 @@ text-align: left;
     flex-direction: column;
     width: auto;
   }
-  
-  .feature-items{
-    display: flex;
+
+  .features-nav-menu .feature-items {
+    display: flex        !important;  
+    max-height: none     !important;  
+    opacity: 1           !important;  
+    overflow: visible    !important;  
   }
+
 }
 
 @media(min-width: 1020px){
