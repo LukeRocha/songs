@@ -114,11 +114,13 @@ ul{
 }
 
 .icons:hover{
-  color: var(--hover-icon-color)
+  color: var(--hover-icon-color);
+  cursor: pointer;
 }
 
 .icons:hover a{
-  color: var(--hover-icon-color)
+  color: var(--hover-icon-color);
+  cursor: pointer;
 }
 
 .icon-wrapper{
@@ -149,6 +151,14 @@ ul{
   width: 4em;
 }
 
+.pointer:hover{
+  cursor: pointer
+}
+
+.hover-border-bottom:hover{
+  border-bottom: 2px solid var(--button-play-bg);
+  cursor: pointer;
+}
 
 /* Header */
 .header-container{
@@ -194,6 +204,7 @@ ul{
   justify-content: space-around;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 
 .user-info-wrapper{
@@ -203,11 +214,36 @@ ul{
   gap: 6px;
 }
 
+.user-info-wrapper:hover h2,
+.user-info-wrapper a{
+  color: var(--font-color-light-hover)
+}
+
 .user-info{
   flex-grow: 1;
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+.menu-dropdown {
+  display: none;
+  flex-direction: column; 
+  gap: 45px;  
+  padding: 10px;
+  background-color: var(--secondary-background-color);
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 45px;
+  width: 140px;
+
+}
+
+.profile-container input[type="checkbox"]:checked
+  + label
+  + .menu-dropdown {
+  display: flex;            
 }
 
 .profile-picture{
@@ -290,6 +326,12 @@ ul{
   padding: 12px 8px;
   gap: 12px;
   height: 8vh;
+}
+
+.new-playlist-container:hover i,
+.new-playlist-container:hover h2{
+  color: var(--font-color-light-hover);
+  cursor: pointer;
 }
 
 .playing{
@@ -395,6 +437,8 @@ ul{
   display: flex;
   width: 100%;
   background-color: var(--main-background-color-transparent);
+  padding-bottom: 8px;
+  
 }
 
 .nav-tabs{
@@ -843,13 +887,18 @@ text-align: left;
     display: none;
   }
 
-  .hover-border:hover  {
+  .hover-border-right:hover  {
     border-right: 4px solid var(--button-play-bg);
     color: var(--font-color-light-hover);
+    cursor: pointer;
   }
 
-  .hover-border:hover .icons,
-  .hover-border:hover p {
+  .hover-border-right:hover{
+    cursor: pointer;
+  }
+
+  .hover-border-right:hover .icons,
+  .hover-border-right:hover p {
     color: var(--font-color-light-hover);
   }
 
