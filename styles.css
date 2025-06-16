@@ -50,6 +50,7 @@ ul{
   width: 100vw;
   overflow-x: hidden;
   height: auto;
+  padding-bottom: 52px; 
 }
 
 .button{
@@ -819,6 +820,7 @@ text-align: left;
   .container{
     width: auto;
     flex-direction: row;
+    padding-bottom: 0; 
   }
 
   .desktop-icons{
